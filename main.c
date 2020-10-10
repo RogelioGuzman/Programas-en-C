@@ -1,20 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 int main()
 {
     int c=0;
-    int I,O,i;
-    printf("\n\tIngrese el valor de la entrada N \n\t ");
+    int I,O,i,i2;
+    printf("\n\tIngresa un valor para N\n\t ");
     scanf("%d", &I);
-
-    while(c<=I)
-    {
-        i=c;
+     i=(2*I)+1;
+    while(c<=i){
+            i2=c;
         c=c+1;
-        O=pow(I,2)-(2*i);
-        printf("%d ",O);
+        O=(3*I)+(2*i2);
+        printf("%d  ",O);
     }
     return 0;
 }
